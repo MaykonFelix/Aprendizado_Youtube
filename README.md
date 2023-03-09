@@ -12,9 +12,6 @@ Learning Create, Read, Update and Delete. <br/>
 
 <br>
 
-<p align="center">
-  <img alt="projeto FigJam" src="preview.jpg" width="50%">
-</p>
 
 ## 🧭 Tech
 
