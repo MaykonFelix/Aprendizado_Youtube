@@ -1,14 +1,19 @@
 const express = require("express");
 const server = express();
 const router = express.Router();
-const fs = require("fs");
+const fs = require("fs"); // File System ***Gerenciar Arquivo
 
 server.use(express.json({ extend: true }));
 
-router.get("/", (req, res) => {
+const readFile = () => {
   const content = fs.readFileSync("./data/items.json", "utf-8");
+  return JSON.parse(content);
+};
 
-  res.send(JSON.parse(content));
+/* Fazer a Leitura do  Arquivo JSON*/
+router.get("/", (req, res) => {
+  const content = readFile();
+  res.send(content);
 });
 
 router.post("/", (req, res) => {
