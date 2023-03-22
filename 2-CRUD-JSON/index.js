@@ -23,19 +23,52 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
   const { name, email, phone } = req.body;
+  const currentContent = readFile();
 
-  const correntContent = readFile();
-  correntContent.push({ name, email, phone });
-  writeFile(correntContent);
-  res.send({ name, email, phone });
+  const id = Math.random().toString(32).substring(2, 9);
+  console.log(id);
+
+  currentContent.push({ id, name, email, phone });
+  writeFile(currentContent);
+  res.send({ id, name, email, phone });
 });
 
-router.put("/", (req, res) => {
-  res.send("Bem Vindo");
+router.put("/:id", (req, res) => {
+  const { id } = req.params;
+
+  const { name, email, phone } = req.body;
+
+  const currentContent = readFile();
+  const selectedItem = currentContent.findIndex((item) => item.id === id);
+
+  const {
+    id: cId,
+    name: cName,
+    email: cEmail,
+    phone: cPhone,
+  } = currentContent[selectedItem];
+
+  const newObject = {
+    id: cId,
+    name: name ? name : cName,
+    email: email ? email : cEmail,
+    phone: phone ? phone : cPhone,
+  };
+
+  currentContent[selectedItem] = newObject;
+  writeFile(currentContent);
+
+  res.send(newObject);
 });
 
-router.delete("/", (req, res) => {
-  res.send("Bem Vindo");
+router.delete("/:id", (req, res) => {
+  const { id } = req.params;
+  const currentContent = readFile();
+  const selectedItem = currentContent.findIndex((item) => item.id === id);
+  currentContent.splice(selectedItem, 1);
+  writeFile(currentContent);
+
+  res.send("Item Apagado!");
 });
 
 server.use(router);
