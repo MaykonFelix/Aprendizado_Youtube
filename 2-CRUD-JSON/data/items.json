@@ -1,5 +1,6 @@
 [
-  {
-    "name": "Maykon"
-  }
+  { "name": "Maykon" },
+  { "name": "Maykon", "email": "equipefelixx@gmail.com", "phone": "9999999" },
+  { "name": "Maykon", "email": "equipefelixx@gmail.com", "phone": "9999999" },
+  { "name": "João", "email": "Joãossss@gmail.com", "phone": "888" }
 ]

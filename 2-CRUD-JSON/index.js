@@ -10,6 +10,11 @@ const readFile = () => {
   return JSON.parse(content);
 };
 
+const writeFile = (content) => {
+  const updateFile = JSON.stringify(content);
+  fs.writeFileSync("./data/items.json", updateFile, "utf-8");
+};
+
 // Fazer a Leitura do  Arquivo JSON
 router.get("/", (req, res) => {
   const content = readFile();
@@ -21,8 +26,8 @@ router.post("/", (req, res) => {
 
   const correntContent = readFile();
   correntContent.push({ name, email, phone });
-  res.send(correntContent);
-  
+  writeFile(correntContent);
+  res.send({ name, email, phone });
 });
 
 router.put("/", (req, res) => {
