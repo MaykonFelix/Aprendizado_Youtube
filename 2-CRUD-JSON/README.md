@@ -20,14 +20,11 @@ Learning Create, Read, Update and Delete. <br/>
 
 This project was developed with the following technologies:
 
-### Front-end
-
-- `HTML`
-- `CSS`
-- `JavaScript`
+- `JSON`
+- `NODEJS`
 
 ## 💻 Project
 
-Learning basic functionalities of creating, reading, updating and deleting information....
+Learning basic functionalities of creating, reading, updating and deleting information, in the Node + JSON....
 
 Feito com ♥ by Maykon
