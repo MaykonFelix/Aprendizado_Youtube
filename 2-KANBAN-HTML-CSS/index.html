@@ -6,15 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KanBan</title>
     <link rel="stylesheet" href="./styles/style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      defer
+    ></script>
   </head>
   <body>
     <div id="app">
       <nav>
-        <div class="logo"></div>
+        <img src="./assets/Vector.svg" alt="LogoSvG" class="logo" />
+        <ul>
+          <a href="#" class="active">
+            <ion-icon name="tablet-portrait"></ion-icon>
+            Boards
+          </a>
+        </ul>
 
         <ul>
-          <li>item</li>
+          <a href="#">
+            <ion-icon name="people"></ion-icon>
+            Equipes
+          </a>
         </ul>
+
+        <ul>
+          <a href="#">
+            <ion-icon name="document-setings"></ion-icon>
+            Relatorios
+          </a>
+        </ul>
+
+        <ul>
+          <a href="#">
+            <ion-icon name="document-setings"></ion-icon>
+            Ajutes
+          </a>
+        </ul>
+      
       </nav>
       <main>
         <div class="inner"></div>
