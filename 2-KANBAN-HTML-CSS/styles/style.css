@@ -23,5 +23,16 @@ body {
 }
 
 main .inner {
-  
+  height: 100%;
+  background-color: #fbfaff;
+  border-top-left-radius: 3.2rem;
+}
+
+main {
+  padding-top: 0.8rem;
+}
+
+nav {
+  padding: 3.2rem 2.7rem 0 3.5rem;
+  min-width: 11.5rem;
 }
