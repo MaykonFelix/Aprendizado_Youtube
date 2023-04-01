@@ -1,7 +1,7 @@
 <h1 align="center"> Layout Quadro Kanban </h1>
 
 <p align="center">
-Learning Create, Read, Update and Delete. <br/>
+Aprendendo A Fazer um Layout Quadro Kanaban. <br/>
 </p>
 
 <p align="center">
@@ -24,7 +24,6 @@ This project was developed with the following technologies:
 
 - `HTML`
 - `CSS`
-- `JavaScript`
 
 ## 💻 Project
 
