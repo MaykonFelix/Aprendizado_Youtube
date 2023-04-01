@@ -50,7 +50,7 @@ ul {
   min-width: 11.5rem;
 }
 
-li a {
+ul a {
   color: #cab3ff;
   display: flex;
   align-items: center;
@@ -170,4 +170,40 @@ section.kanban h2 {
   font-size: 2rem;
   color: #403937;
   padding: 2.4rem 0;
+}
+
+.card {
+  padding: 2.4rem;
+  background: #fff;
+  box-shadow: 0rem 0.4rem 1.6rem #eae2fd;
+  border-radius: 0.8rem;
+
+  line-height: 130%;
+}
+.card h3 {
+  font-size: 1.4rem;
+  color: #403937;
+}
+
+.card p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #756966;
+  margin-top: 1rem;
+}
+
+.card .tags {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: #7c3aed;
+  font-weight: 500;
+}
+
+.card .tags span {
+  font-size: 1.1rem;
+  line-height: 130%;
+  background: #e2d6ff;
+  border-radius: 0.4rem 0.8rem;
 }
