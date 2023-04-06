@@ -5,7 +5,7 @@ Aprendendo A Fazer um Layout Quadro Kanaban. <br/>
 </p>
 
 <p align="center">
-<img  src="assets/Animação.gif">
+<img  width="70%" src="assets/Quadro_Kanban.png">
 </p>
 
 <p align="center">
@@ -16,20 +16,22 @@ Aprendendo A Fazer um Layout Quadro Kanaban. <br/>
 
 <br>
 
-## 🧭 Tech
+## 🧭 Tecnologias
 
-This project was developed with the following technologies:
+Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Front-end
 
 - `HTML`
 - `CSS`
 
-## 💻 Project
+## 💻 Projeto
 
-Learning basic functionalities of creating, reading, updating and deleting information....
+Aprendendo um pouco de Layout... Projeto feito inicial para implementar funcionalidades...
 
-## 💻 Next - Incremet this Project
+<br>
+
+## 💻 Para inclementar
 
 • Como cortar textos longos e adicionar 3 pontinhos com CSS e Javascript
 • Drag and Drop Raiz com a API do html, css e javascriptro masterClass #16
