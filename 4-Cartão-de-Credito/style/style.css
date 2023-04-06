@@ -122,3 +122,36 @@ input:focus {
   width: 1.6rem;
   height: 1.6rem;
 }
+
+.info-security {
+  margin-top: 4.8rem;
+
+  justify-content: center;
+  gap: 0.8rem;
+
+  font-size: 1.4rem;
+  color: #e5e7eb;
+}
+
+button {
+  margin-top: 10rem;
+
+  border: 0;
+  padding: 1.6rem;
+  width: 100%;
+  background: #9333ea;
+  box-shadow: 0rem 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.4rem;
+
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: #f9fafb;
+
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #a855f7;
+}
