@@ -8,4 +8,12 @@ IMask(document.querySelector("#cc-number"), {
 
 IMask(document.querySelector("#cc-validity"), {
   mask: "MM{/}YY",
+  blocks: {
+    MM: {
+      mask: "00",
+    },
+    YY: {
+      mask: "00",
+    },
+  },
 });
