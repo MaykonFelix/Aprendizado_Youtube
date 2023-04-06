@@ -16,8 +16,8 @@ IMask(document.querySelector("#cc-validity"), {
     },
     YY: {
       mask: IMask.MaskedRange,
-      from: 1,
-      to: 12,
+      from: String(new Date().getFullYear()).slice(2),
+      to: String(new Date().getFullYear() + 10).slice(2),
     },
   },
 });
