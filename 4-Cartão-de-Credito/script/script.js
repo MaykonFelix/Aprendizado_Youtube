@@ -10,10 +10,14 @@ IMask(document.querySelector("#cc-validity"), {
   mask: "MM{/}YY",
   blocks: {
     MM: {
-      mask: "00",
+      mask: IMask.MaskedRange,
+      from: 1,
+      to: 12,
     },
     YY: {
-      mask: "00",
+      mask: IMask.MaskedRange,
+      from: 1,
+      to: 12,
     },
   },
 });
