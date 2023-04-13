@@ -17,4 +17,32 @@ body {
   place-content: center;
 }
 
-.drag-file
+.drag-files {
+  background: #f3f0ff;
+  border: 1px dashed #c1b2fa;
+  border-radius: 8px;
+  width: 440px;
+
+  text-align: center;
+  padding: 28px 0 32px;
+
+  position: relative;
+}
+
+.drag-files input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+}
+
+.drag-files i.ph {
+  font-size: 48px;
+  color: #7c3aed;
+}
+
+.drag-files h3 {
+  margin-top: 12px;
+
+  color: #7a5fec;
+}
