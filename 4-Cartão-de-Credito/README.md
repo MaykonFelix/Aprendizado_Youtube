@@ -18,11 +18,10 @@ Aprendendo A Fazer um Layout para autenticar Cartão. <br/>
 
 <p>• Aprendi a um pouco de:</p>
 <p>• Animação com CSS</p>
-<p>• Autenticação de valores com </p>
+<p>• Validação dos imputs com ImaskJS </p>
 <br>
 
 ## 🧭 Tecnologias
-
 Este projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Front-end
