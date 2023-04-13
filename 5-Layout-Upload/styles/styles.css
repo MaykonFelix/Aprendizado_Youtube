@@ -45,4 +45,26 @@ body {
   margin-top: 12px;
 
   color: #7a5fec;
+  font-size: 16px;
+}
+
+.drag-files p {
+  font-size: 14px;
+  color: #746e82;
+}
+
+.drag-files.dragover {
+  background: #ebe6ff;
+}
+
+/* Box */
+
+.box {
+  padding: 8px;
+
+  width: 440px;
+
+  background-color: #fff;
+  box-shadow: 0px 4px 16px #eae2fd;
+  border-radius: 8px;
 }
