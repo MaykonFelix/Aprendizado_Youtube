@@ -34,6 +34,6 @@ Aprendendo um pouco de Layout... Projeto feito inicial para implementar funciona
 ## 💻 Para inclementar
 
 • Como cortar textos longos e adicionar 3 pontinhos com CSS e Javascript
-• Drag and Drop Raiz com a API do html, css e javascriptro masterClass #16
+• Drag and Drop Raiz com a API do html, css e Javascript masterClass #16
 
 Feito com ♥ by Maykon
