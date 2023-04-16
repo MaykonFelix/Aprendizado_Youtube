@@ -1,6 +1,6 @@
-# Learning Youtube Videos
+# Aprendendo Com videos Youtube
 
-Sessão de aprendizados videos do youtube...
+Sessão de aprendizados videos do youtube aleatorios...
 
 ### 1 - CRUDE - Simples
 
