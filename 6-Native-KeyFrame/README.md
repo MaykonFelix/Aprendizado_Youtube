@@ -7,7 +7,7 @@ Aprendendo A Fazer uma animação em Reactive Native. <br/>
 </p>
 
 <p align="center">
-<img  width="70%" src="assets/Animação.gif">
+<img  src="assets/Animação.gif">
 </p>
 
 <p align="center">
