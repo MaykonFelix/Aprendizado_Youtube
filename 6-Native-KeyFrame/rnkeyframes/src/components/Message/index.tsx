@@ -11,10 +11,16 @@ export function Message() {
     100: { opacity: 1, transform: [{ translateY: 0 }] },
   });
 
+  const exitiginKeyfram = new Keyframe({
+    from: { opacity: 1, transform: [{translateY: 0}]},
+    to: {opacity: 0, transform: [{translateY: -100}]},
+  });
+
   return (
     <Animated.View
       style={styles.container}
       entering={enteringKeyframe.duration(500)}
+      exiting={exitiginKeyfram}
     >
       <MaterialIcons name="notifications" color="#FFF" size={18} />
       <Text style={styles.title}>Mensagem de Exemplo.</Text>
