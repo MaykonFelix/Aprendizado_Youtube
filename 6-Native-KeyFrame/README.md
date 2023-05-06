@@ -7,7 +7,7 @@ Aprendendo A Fazer uma animação em Reactive Native. <br/>
 </p>
 
 <p align="center">
-<img  src="assets/Animação.gif">
+<img  src="./assets/Animação.gif">
 </p>
 
 <p align="center">
@@ -25,7 +25,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ### Mobile
 
 - `React Native`
-
 
 ## 💻 Projeto
 

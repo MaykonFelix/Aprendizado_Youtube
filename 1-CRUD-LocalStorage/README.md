@@ -5,7 +5,7 @@ Learning Create, Read, Update and Delete. <br/>
 </p>
 
 <p align="center">
-<img  src="assets/Animação.gif">
+<img  src="./assets/Animação.gif">
 </p>
 
 <p align="center">
