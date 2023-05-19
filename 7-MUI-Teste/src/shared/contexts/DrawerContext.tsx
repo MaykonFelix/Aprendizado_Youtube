@@ -15,7 +15,7 @@ interface IAppThemeProviderProps {
   children: React.ReactNode;
 }
 
-export const DrawerProvinder: React.FC<IAppThemeProviderProps> = ({
+export const DrawerProvider: React.FC<IAppThemeProviderProps> = ({
   children,
 }) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
