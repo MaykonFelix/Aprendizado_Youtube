@@ -36,4 +36,14 @@ Aprendendo um pouco de Layout... Projeto feito inicial para implementar funciona
 • Como cortar textos longos e adicionar 3 pontinhos com CSS e Javascript
 • Drag and Drop Raiz com a API do html, css e Javascript masterClass #16
 
+```css
+.seletor {
+  white-space: nowrap; /* Não deixa texto quebrar linha */
+  overflow: hidden; /* Esconte o texto no conteudo */
+  text-overflow: ellipsis; /* Texto escondido com pontinhos */
+}
+
+/* Em CSS deixa o texto */
+```
+
 Feito com ♥ by Maykon

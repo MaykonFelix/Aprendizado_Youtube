@@ -179,7 +179,9 @@ section.kanban h2 {
   border-radius: 0.8rem;
 
   line-height: 130%;
+  max-width: 300px;
 }
+
 .card h3 {
   font-size: 1.4rem;
   color: #403937;
@@ -190,8 +192,19 @@ section.kanban h2 {
   font-size: 1.4rem;
   color: #756966;
   margin-top: 1rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: ease-in 250ms;
 }
 
+.card p:hover {
+  white-space: normal;
+  overflow: auto;
+  text-overflow: ellipsis;
+} 
 .card .tags {
   margin-top: 1rem;
   display: flex;
