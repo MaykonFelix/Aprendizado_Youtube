@@ -11,7 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { Box } from "@mui/system";
-import { useNavigate } from "react-router-dom";
+import { useMatch, useNavigate, useResolvedPath } from "react-router-dom";
 import { useDrawerContext } from "src/shared/contexts";
 
 interface IListItemLinkProps {
@@ -28,6 +28,10 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({
   onClick,
 }) => {
   const navigate = useNavigate();
+
+  const reolvedPath = useResolvedPath(to);
+  const match = useMatch({ path: reolvedPath.pathname, end: false });
+
   const handleClick = () => {
     navigate(to);
     onClick?.();
