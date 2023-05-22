@@ -37,3 +37,8 @@ Aprendendo criar layout para import de arquivos
 ##### Tech: React Native
 
 Aprendendo criar uma animação keyframes com React Native
+
+## 7 - React - MUI
+
+##### Tech: ReactJS
+Aprendendo a utilizar Material UI
