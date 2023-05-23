@@ -38,7 +38,7 @@ const ListItemLink: React.FC<IListItemLinkProps> = ({
   };
 
   return (
-    <ListItemButton onClick={handleClick}>
+    <ListItemButton selected={!!match} onClick={handleClick}>
       <ListItemIcon>
         <Icon>{icon}</Icon>
       </ListItemIcon>
@@ -57,6 +57,7 @@ export const MenuLateral: React.FC<IMenuLateralProps> = ({ children }) => {
 
   const { isDrawerOpen, toggleDrawerOpen } = useDrawerContext();
 
+  
   return (
     <>
       <Drawer
