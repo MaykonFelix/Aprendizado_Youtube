@@ -11,9 +11,11 @@ export const App = () => {
     <AppThemeProvider>
       <DrawerProvider>
         <BrowserRouter>
+
           <MenuLateral>
             <AppRoutes />
           </MenuLateral>
+          
         </BrowserRouter>
       </DrawerProvider>
     </AppThemeProvider>
