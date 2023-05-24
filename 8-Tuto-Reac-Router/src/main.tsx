@@ -6,10 +6,20 @@ import { Root } from "./routes/root.tsx";
 
 import "./global.css";
 
+import { ErrorPage } from "./ErrorPage.tsx";
+import { Contact } from "./routes/contact.tsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "contacts/:contactId",
+        element: <Contact />,
+      },
+    ],
   },
 ]);
 
