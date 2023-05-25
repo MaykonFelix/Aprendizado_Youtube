@@ -6,18 +6,8 @@ export const loader = async ({ params }) => {
   return { contact };
 };
 
-export default function Contact(){
-  
+export default function Contact() {
   const { contact } = useLoaderData();
-
-  const contact = {
-    first: "Your",
-    last: "Name",
-    avatar: "https://placekitten.com/g/200/200",
-    twitter: "your_handle",
-    notes: "Some notes",
-    favorite: true,
-  };
 
   return (
     <div id="contact">
@@ -66,7 +56,7 @@ export default function Contact(){
       </div>
     </div>
   );
-};
+}
 
 function Favorite({ contact }) {
   // yes, this is a `let` for later
