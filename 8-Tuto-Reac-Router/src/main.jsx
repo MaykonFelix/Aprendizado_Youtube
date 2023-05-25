@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       {
         path: "contacts/:contactId/destroy",
         action: destoryAction,
-        errorElement: <div>Oops! There was an error</div>
+        errorElement: <div>Oops! There was an error</div>,
       },
     ],
   },
