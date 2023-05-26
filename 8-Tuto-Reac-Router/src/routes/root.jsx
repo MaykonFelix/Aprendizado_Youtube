@@ -5,8 +5,12 @@ import {
   Form,
   redirect,
   useNavigation,
+  useSubmit,
 } from "react-router-dom";
+
 import { getContacts, createContact } from "../contacts";
+
+import { useEffect } from "react";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const action = async () => {
@@ -15,20 +19,47 @@ export const action = async () => {
 };
 
 // eslint-disable-next-line react-refresh/only-export-components
-export const loader = async () => {
-  const contacts = await getContacts();
-  return { contacts };
+export const loader = async ({ request }) => {
+  const url = new URL(request.url);
+  const q = url.searchParams.get("q");
+  const contacts = await getContacts(q);
+  return { contacts, q };
 };
 
 export const Root = () => {
-  const { contacts } = useLoaderData();
+  const { contacts, q } = useLoaderData();
   const navigation = useNavigation();
+  const submit = useSubmit();
+
+  const searching =
+    navigation.location &&
+    new URLSearchParams(navigation.location.search).has("q");
+
+  useEffect(() => {
+    document.getElementById("q").value = q;
+  }, [q]);
 
   return (
     <>
       <div id="sidebar">
         <h1>React Router Contacts</h1>
         <div>
+          <Form id="search-form" role="search">
+            <input
+              id="q"
+              className={searching ? "loading" : ""}
+              aria-label="Search contacts"
+              placeholder="Search"
+              type="search"
+              name="q"
+              defaultValue={q}
+              onChange={(event) => {
+                submit(event.currentTarget.form);
+              }}
+            />
+            <div id="search-spinner" aria-hidden hidden={true} />
+            <div className="sr-only" aria-live="polite"></div>
+          </Form>
           <Form method="post">
             <button type="submit">New</button>
           </Form>
