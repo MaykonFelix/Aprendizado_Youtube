@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the thime to help us improve the platform
+    </p>
+    <div class="container">
+      <form action="" id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" placeholder="Enter your Email" />
+
+          <label for="number" id="number-label">Age</label>
+          <input type="number" id="number" min="8" max="98" placeholder="Age" />
+
+          <label for="dropdown"
+            >Which option best describes your current role?</label
+          >
+          <select id="dropdown">
+            <option value="">select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time Learner</option>
+            <option value="4">Prefer not say</option>
+            <option value="5">Other</option>
+          </select>
+          <label for="">Would you recommend freeCodeCamp to a friend?</label>
+
+          <label for="definitely"
+            ><input name="choise" type="radio" id="definitely" />
+            Definitely</label
+          >
+          <label for="maybe"
+            ><input name="choise" type="radio" id="maybe" /> Maybe</label
+          >
+          <label for="notsure"
+            ><input name="choise" type="radio" id="notsure" /> Not sure</label
+          >
+
+
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
