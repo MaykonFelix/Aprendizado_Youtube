@@ -41,4 +41,11 @@ Aprendendo criar uma animação keyframes com React Native
 ## 7 - React - MUI
 
 ##### Tech: ReactJS
+
 Aprendendo a utilizar Material UI
+
+## 10 - Livro
+
+##### Estrutura de Dados e ALgoritmos com Javascript
+
+Aprendendo sobre Estrutura de dados com Javascript, Exercicios e Exemplos do livro para aprendizagem.
